@@ -10,12 +10,12 @@ test.describe('Portfolio UI Tests', () => {
     });
 
     test('should have correct title and metadata', async ({ page }) => {
-        await expect(page).toHaveTitle(/Vikas Kumar | Senior QA Automation Analyst | QA Automation Analyst/);
+        await expect(page).toHaveTitle(/Vikas Kumar | Senior QA Automation Analyst/);
     });
 
     test('should display hero section with key elements', async () => {
         await expect(homePage.heroName).toHaveText('Vikas Kumar');
-        await expect(homePage.heroTitle).toHaveText('Senior QA Automation Analyst');
+        await expect(homePage.heroTitle).toHaveText('Senior QA Automation Analyst | DevOps & CI/CD Specialist');
         await expect(homePage.primaryButton).toBeVisible();
     });
 
